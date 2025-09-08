@@ -1,16 +1,12 @@
-
-/*Reset */
-
-
-*{
+/* Reset */
+* {
     padding: 0;
     margin: 0;
-    font font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
     box-sizing: border-box;
 }
 
 /* Variables */
-
 :root {
     --main-color: #306b7b;
     --main-text-color: #FFF;
@@ -18,10 +14,11 @@
     --bio-bg-color: #1E2A3A;
     --bio-border-color: #293544;
     --about-bg-color: #111821;
+    --section-title-color: #e0e0e0;
 }
 
 /* General */
-.highlight{
+.highlight {
     color: var(--main-color);
 }
 
@@ -32,7 +29,7 @@
     color: var(--main-text-color);
 }
 
-#bio-container{
+#bio-container {
     flex: 1 1 20%;
     min-height: 100vh;
     background-color: var(--bio-bg-color);
@@ -49,32 +46,28 @@
     padding: 50px;
 }
 
-#bio-container img{
-    width: 200px;
-    height: 200px;
-}
-
 /* Bio container */
-#bio-container h2{
-    margin-bottom: 25px;
-}
-
-#bio-container p{
-    margin-bottom: 20px;
-}
-
-#bio-container #welcome-text{
-    font-weight: bold;
-}
-
-#bio-img{
+#bio-container img {
     width: 175px;
     height: 175px;
     border-radius: 50%;
     margin-bottom: 25px;
+    border: 3px solid var(--main-color);
 }
 
-#social-container{
+#bio-container h2 {
+    margin-bottom: 25px;
+}
+
+#bio-container p {
+    margin-bottom: 20px;
+}
+
+#bio-container #welcome-text {
+    font-weight: bold;
+}
+
+#social-container {
     display: flex;
     justify-content: center;
     list-style-type: none;
@@ -83,57 +76,69 @@
     padding-bottom: 25px;
 }
 
-#social-container li{
+#social-container li {
     flex: 1 1 0;
     max-width: 60px;
 }
 
-#social-container li a{
+#social-container li a {
     color: var(--main-color);
     font-size: 30px;
+    transition: 0.3s;
 }
 
-#email-container{
+#social-container li a:hover {
+    color: #4db6ac;
+}
+
+#email-container,
+#phone-container {
     display: flex;
     justify-content: center;
-}
-
-#email-container ion-icon,
-#email-container a {
-    flex: 1 1 0;
-}
-
-#email-container a{
-    color: var(--main-text-color);
-    text-decoration: none;
-    max-width: 225px;
-}
-
-#email-container ion-icon{
-    color: var(--main-color);
-    font-size: 20px;
-    margin-right: 5px;
-    max-width: 20px;
-}
-
-/* About container */
-#name{
-    font-size: 42px;
-    margin-bottom: 15px;
-}
-
-#title{
-    font-size: 24px;
-    margin-bottom: 15px;
-    font-weight: bold;
-}
-
-.description{
-    max-width: 75%;
+    align-items: center;
     margin-bottom: 10px;
 }
 
-#btn-projects{
+#email-container ion-icon,
+#phone-container ion-icon {
+    color: var(--main-color);
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+#email-container a,
+#phone-container a {
+    color: var(--main-text-color);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#email-container a:hover,
+#phone-container a:hover {
+    color: var(--main-color);
+}
+
+/* About container */
+#name {
+    font-size: 42px;
+    margin-bottom: 15px;
+    font-weight: 900;
+}
+
+#title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.description {
+    max-width: 75%;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+#btn-projects {
     font-weight: bold;
     font-size: 16px;
     color: var(--main-text-color);
@@ -141,104 +146,141 @@
     border: 2px solid var(--main-color);
     border-radius: 5px;
     text-decoration: none;
-    transition: .5s;
+    transition: .3s;
     margin: 25px 0;
     padding: 12px 10px;
-    width: 150px;
+    width: 180px;
     text-align: center;
     display: flex;
-}
-
-#btn-projects ion-icon,
-#btn-projects span{
-    flex: 1 1 0;
+    justify-content: center;
+    align-items: center;
 }
 
 #btn-projects ion-icon {
     font-size: 20px;
-    max-width: 20px;
+    margin-right: 8px;
 }
 
 #btn-projects:hover {
     background-color: transparent;
+    color: var(--main-color);
 }
 
-#skills-section-title{
+/* Section titles */
+#skills-section-title,
+#experience-title,
+#education-title,
+#languages-title {
     border-top: 1px solid var(--border-color);
     padding-top: 20px;
+    margin-top: 30px;
     margin-bottom: 20px;
-    font-size: 32px;
+    font-size: 28px;
+    color: var(--section-title-color);
 }
 
-#skills-container{
+/* Skills */
+#skills-container {
     display: flex;
     flex-wrap: wrap;
     margin-top: 25px;
 }
 
-.skills-box{
+.skills-box {
     flex: 1 1 33%;
     max-width: 33%;
     margin-bottom: 35px;
 }
 
-.skills-title{
-    font-size: 24px;
-    margin-bottom: 25px;
+.skills-title {
+    font-size: 20px;
+    margin-bottom: 20px;
     font-weight: bold;
     padding-left: 10px;
     border-left: 5px solid var(--main-color);   
 }
 
-.skills-box i{
+.skills-box i {
     font-size: 45px;
     margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+.skills-box i:hover {
+    transform: scale(1.2);
+}
+
+/* Experience, Education, Languages */
+.experience-list,
+.education-list,
+.languages-list {
+    list-style: none;
+    padding-left: 15px;
+}
+
+.experience-list li,
+.education-list li,
+.languages-list li {
+    margin-bottom: 15px;
+    line-height: 1.5;
+    position: relative;
+    padding-left: 20px;
+}
+
+.experience-list li::before,
+.education-list li::before,
+.languages-list li::before {
+    content: "▹";
+    color: var(--main-color);
+    position: absolute;
+    left: 0;
+    font-size: 18px;
 }
 
 /* Mobile */
-
-@media(max-width: 450px){
-    #container{
+@media(max-width: 768px) {
+    #container {
         flex-direction: column;
     }
-    #bio-container{
+
+    #bio-container {
         min-height: auto;
         border-right: none;
         border-bottom: 5px solid var(--bio-border-color);
     }
 
-    #bio-container h2{
+    #bio-container h2 {
         display: none;
     }
-    
-    #bio-container p{
-        max-width: 60%;
+
+    #bio-container p {
+        max-width: 80%;
         margin: 10px auto;
     }
 
-    #about-container{
+    #about-container {
         text-align: center;
         padding: 30px;
     }
 
-    #about-container .description{
+    #about-container .description {
         margin: 10px auto;
         max-width: 100%;
         line-height: 26px;
     }
 
-    #btn-projects{
+    #btn-projects {
         margin: 20px auto;
     }
 
-    .skills-box{
+    .skills-box {
         flex: 1 1 100%;
         max-width: 100%;
         margin-bottom: 40px;
-        text-align: left;
+        text-align: center;
     }
 
-    .skills-box i{
-        font-size: 60px;
+    .skills-box i {
+        font-size: 55px;
     }
 }
