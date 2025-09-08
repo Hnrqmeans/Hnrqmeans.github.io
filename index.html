@@ -1,85 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio Henrique Minillo Moreira</title>
+    <title>Portfólio - Henrique Minillo Moreira</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,300;0,700;0,900;1,300;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
 
     <!-- Dev Icon Fonts -->
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />  
 
     <!-- CSS do Projeto -->
     <link rel="stylesheet" href="css/styles.css">
-          
 </head>
 <body>
     <main id="container">
         <aside id="bio-container">
             <h2>Henrique Minillo Moreira</h2>
             <img id="bio-img" src="img/img.jpg" alt="Henrique Minillo Moreira">
-            <p>Olá meu nome é Henrique Minillo<span class="highlight"></span></p>
-            <p id="welcome=text">Seja bem-vindo!</p>
+            <p>Olá, meu nome é <span class="highlight">Henrique Minillo</span>.</p>
+            <p id="welcome-text">Seja bem-vindo!</p>
             <ul id="social-container">
                 <li><a href="https://github.com/Hnrqmeans" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
                 <li><a href="https://www.linkedin.com/in/henriqueminillo/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
                 <li><a href="https://www.instagram.com/hnrqmeans/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
             </ul>
             <div id="email-container">
-                <ion-icon name="mail-outline">ion-icon></ion-icon><a href="mailto:hnrqeoa@gmail.com">hnrqeoa@gmail.com</a>
+                <ion-icon name="mail-outline"></ion-icon>
+                <a href="mailto:henriqueminillo@hotmail.com">henriqueminillo@hotmail.com</a>
+            </div>
+            <div id="phone-container">
+                <ion-icon name="call-outline"></ion-icon>
+                <a href="tel:+5514996346678">(14) 99634-6678</a>
             </div>
         </aside>
 
         <section id="about-container">
             <h1 id="name">Henrique Minillo Moreira</h1>
-            <p id="title"><span class="highlight">Estudante</span></p>
-            <p class="description">Atualmente estou estudando na área de <span class="highlight">Segurança da informação</span> e trabalhando como produtor de <span class="highlight">equipamentos Eletrônicos e Hospitalares</span>, amo tecnologia, estudo todos os dias para me tornar cada vez melhor e ampliar meu conhecimento.</p>
-            <a href="https://github.com/Hnrqmeans?tab=projects" id="btn-projects"><ion-icon name="share-social-outline"></ion-icon> <span>Ver Projetos</span></a>
+            <p id="title"><span class="highlight">Desenvolvedor Full-Stack</span></p>
+            
+            <p class="description">
+                Sou desenvolvedor full-stack com experiência prática em 
+                <span class="highlight">Java Spring Boot, JavaScript, HTML e CSS</span>. 
+                Atualmente atuo no desenvolvimento de um <span class="highlight">e-commerce completo</span>, 
+                aplicando boas práticas de programação, versionamento com Git/GitHub 
+                e integrações com APIs (Asaas e Melhor Envio). Também implementei um 
+                servidor NAS com Raspberry Pi e OpenMediaVault para automação e 
+                armazenamento seguro de dados. 
+            </p>
+            
+            <p class="description">
+                Meu objetivo é atuar em projetos de <span class="highlight">desenvolvimento web</span>, 
+                criando aplicações <span class="highlight">seguras, escaláveis e robustas</span>, 
+                explorando arquitetura de APIs e microserviços modernos.
+            </p>
+
+            <a href="https://github.com/Hnrqmeans?tab=projects" id="btn-projects">
+                <ion-icon name="share-social-outline"></ion-icon> 
+                <span>Ver Projetos</span>
+            </a>
+
             <h2 id="skills-section-title">Minhas Skills</h2>
-            <p class="description">Conheça as tecnologias que domino:</p>
             <div id="skills-container">
-    <div class="skills-box">
-        <p class="skills-title">Front-end</p>
-        <i class="devicon-html5-plain colored"></i>
-        <i class="devicon-css3-plain colored"></i>
-        <i class="devicon-javascript-plain colored"></i>
-    </div>
-    <div class="skills-box">
-        <p class="skills-title">Back-end</p>
-        <i class="devicon-java-plain colored"></i>
-        <i class="devicon-python-plain-wordmark colored"></i>
-    </div>
-    <div class="skills-box">
-        <p class="skills-title">Databases</p>
-        <i class="devicon-mysql-plain colored"></i>
-    </div>
-    <div class="skills-box">
-        <p class="skills-title">Front-end Frameworks</p>
-        <!-- Você pode adicionar futuramente React, Angular etc. -->
-    </div>
-    <div class="skills-box">
-        <p class="skills-title">Back-end Frameworks</p>
-        <i class="devicon-spring-plain colored"></i>
-    </div>
-<div class="skills-box">
-    <p class="skills-title">Tools</p>
-    <i class="devicon-git-plain colored"></i>
-    <i class="devicon-github-original-wordmark"></i>
-    <i class="devicon-linux-plain"></i>
-    <i class="devicon-debian-plain colored"></i>
-    <i class="devicon-ubuntu-plain colored"></i>
-    <i class="devicon-raspberrypi-line colored"></i>
-    <i class="devicon-vscode-plain-wordmark colored"></i>
-</div>
+                <div class="skills-box">
+                    <p class="skills-title">Front-end</p>
+                    <i class="devicon-html5-plain colored"></i>
+                    <i class="devicon-css3-plain colored"></i>
+                    <i class="devicon-javascript-plain colored"></i>
+                </div>
+                <div class="skills-box">
+                    <p class="skills-title">Back-end</p>
+                    <i class="devicon-java-plain colored"></i>
+                    <i class="devicon-python-plain-wordmark colored"></i>
+                    <i class="devicon-spring-plain colored"></i>
+                </div>
+                <div class="skills-box">
+                    <p class="skills-title">Databases</p>
+                    <i class="devicon-mysql-plain colored"></i>
+                </div>
+                <div class="skills-box">
+                    <p class="skills-title">Ferramentas</p>
+                    <i class="devicon-git-plain colored"></i>
+                    <i class="devicon-github-original-wordmark"></i>
+                    <i class="devicon-linux-plain"></i>
+                    <i class="devicon-debian-plain colored"></i>
+                    <i class="devicon-ubuntu-plain colored"></i>
+                    <i class="devicon-raspberrypi-line colored"></i>
+                    <i class="devicon-vscode-plain-wordmark colored"></i>
+                </div>
+            </div>
+
+            <h2 id="experience-title">Experiência</h2>
+            <ul class="experience-list">
+                <li>
+                    <strong>DAIKKO Indústria Eletrônica LTDA</strong> – Montador Eletrônico (Out/2022 – 2025)  
+                    <br>Atuação na montagem de componentes SMD e PTH (PCBs), programação e gravação de microcontroladores e circuitos integrados.
+                </li>
+                <li>
+                    <strong>Projetos Próprios</strong> – Desenvolvedor Full-Stack (2025 – Presente)  
+                    <br>Desenvolvimento de e-commerce completo com integração de APIs de pagamento e frete, automação de processos e deploy em ambiente Linux.
+                </li>
+            </ul>
+
+            <h2 id="education-title">Formação</h2>
+            <ul class="education-list">
+                <li>Faculdade de Tecnologia de Ourinhos (FATEC) – Tecnologia da Informação (2022 – 2024)</li>
+                <li>Escola Técnica Estadual (ETEC Ourinhos) – Técnico em Eletrônica (2018 – 2020)</li>
+                <li>Cursos Complementares: Git & GitHub (Udemy)</li>
+            </ul>
+
+            <h2 id="languages-title">Idiomas</h2>
+            <ul class="languages-list">
+                <li>Português: Nativo</li>
+                <li>Inglês: Intermediário (boa leitura e escrita, conversação em desenvolvimento)</li>
+            </ul>
         </section>
     </main>
 
     <!-- Ion Icons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
 </body>
 </html>
