@@ -284,3 +284,108 @@
         font-size: 55px;
     }
 }
+/* Nova classe para localização */
+.location {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 25px;
+    color: #ccc;
+    font-size: 18px;
+}
+
+.location ion-icon {
+    margin-right: 8px;
+    color: var(--main-color);
+}
+
+/* Tags para tecnologias */
+.tech-tag {
+    display: inline-block;
+    background-color: #2a3b52;
+    color: #e0e0e0;
+    padding: 6px 12px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid var(--main-color);
+    transition: all 0.3s;
+}
+
+.tech-tag:hover {
+    background-color: var(--main-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Certificações */
+#certificates-title {
+    border-top: 1px solid var(--border-color);
+    padding-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: var(--section-title-color);
+}
+
+.certificates-list {
+    list-style: none;
+    padding-left: 15px;
+}
+
+.certificates-list li {
+    margin-bottom: 15px;
+    line-height: 1.5;
+    position: relative;
+    padding-left: 20px;
+}
+
+.certificates-list li::before {
+    content: "▹";
+    color: var(--main-color);
+    position: absolute;
+    left: 0;
+    font-size: 18px;
+}
+
+/* Data de atualização */
+#update-date {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    font-size: 14px;
+}
+
+#update-date ion-icon {
+    margin-right: 8px;
+    color: var(--main-color);
+}
+
+/* Ajuste para as caixas de skills com tags */
+.skills-box:nth-child(6) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsivo para mobile */
+@media(max-width: 768px) {
+    .location {
+        justify-content: center;
+    }
+    
+    .tech-tag {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+    
+    #update-date {
+        font-size: 12px;
+    }
+}
